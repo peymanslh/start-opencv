@@ -1,19 +1,19 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('pic.jpg')
+img = cv2.imread('pixel.jpg')
 
 # Show color of pixel 100-100
-px = img[200, 100]
-print px
+px = img[55, 99]
+print "px", px
 
 # Show blue color of pixel 100-100
-cblue = img[100, 100, 0]
+cblue = img[30, 40, 0]
 print cblue
 
 # Change color of pixel 100-100
-img[100, 100] = [255, 255, 255]
-print img[100, 100]
+img[30, 40] = [255, 255, 255]
+print "print img 100, 100", img[30, 40]
 
 # Show image properties
 print "number of rows, columns and channels: ", img.shape
